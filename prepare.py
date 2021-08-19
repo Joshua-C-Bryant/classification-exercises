@@ -1,3 +1,5 @@
+import pandas as pd
+
 def clean_iris_data(df):
     df.drop_duplicates(inplace = True)
     df.drop(columns = ['species_id','measurement_id'], inplace = True)
